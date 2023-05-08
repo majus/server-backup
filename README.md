@@ -111,16 +111,24 @@ ServerBackup uses this file to save the sources, here is a sample of this file:
   {
     "type": "mySQL",
     "DbName": "tajer",
-    "DbUser": "root",
-    "DbPassword": ""
-  },
-  {
-    "type": "mySQL",
-    "DbName": "ServerBackupTest",
     "DbUser": "root"
   },
   {
+    "type": "mySQL",
+    "DbHost": "mysql.example.com",
+    "DbPort": "5506",
+    "DbName": "ServerBackupTest",
+    "DbUser": "root",
+    "DbPassword": "password"
+  },
+  {
     "type": "mongoDB",
+    "DbName": "ServerBackup"
+  },
+  {
+    "type": "mongoDB",
+    "DbHost": "mongo.example.com",
+    "DbPort": "22022",
     "DbName": "ServerBackup"
   }
 ]

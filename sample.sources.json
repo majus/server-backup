@@ -17,16 +17,24 @@
     {
         "type": "mySQL",
         "DbName": "tajer",
-        "DbUser": "root",
-        "DbPassword": ""
-    },
-    {
-        "type": "mySQL",
-        "DbName": "ServerBackupTest",
         "DbUser": "root"
     },
     {
+        "type": "mySQL",
+        "DbHost": "mysql.example.com",
+        "DbPort": "5506",
+        "DbName": "ServerBackupTest",
+        "DbUser": "root",
+        "DbPassword": "password"
+    },
+    {
         "type": "mongoDB",
+        "DbName": "sb"
+    },
+    {
+        "type": "mongoDB",
+        "DbHost": "mongo.example.com",
+        "DbPort": "22022",
         "DbName": "sb"
     }
 ]
