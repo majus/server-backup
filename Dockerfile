@@ -6,7 +6,7 @@ RUN apt-get update -yq \
     && apt-get install -yq nodejs default-mysql-client mongo-tools curl wget sudo unzip git
 RUN curl https://rclone.org/install.sh |  bash
 RUN mkdir -p /etc/rclone
-RUN npm install https://github.com/majus/server-backup
 RUN mkdir /etc/server-backup
 WORKDIR /etc/server-backup
+RUN npm install https://github.com/majus/server-backup
 CMD npx server-backup backup
